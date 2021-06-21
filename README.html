@@ -28,15 +28,20 @@ Você pode usar o seguinte documento HTML como ponto de partida:
         <h1>Multiplication Table</h1>
         <script>
 
-            function nomeDaSuaFuncao(n) { // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
+            function tabuada(n) { // Substitua "nomeDaSuaFuncao" por um nome mais apropriado
                 // escreve a coluna inicial
                 let x = [];
                 for (let i = 0; i <= n; i++) {
-                    x[i] = [];
+                    x[i]=[]
+                    for (let j = 0; j<= n; j++) {
+                        x[i].push(i * j);
+                    }
                 }
                 console.table(x)
                 // TODO: escrever dois loops aninhados para desenhar o array bidimencional e monstar o restante da tabela no console.
             }
+
+            // tabuada(10)   //TESTE
         </script>
     </body>
 </html>
