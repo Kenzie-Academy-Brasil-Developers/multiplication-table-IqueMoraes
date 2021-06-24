@@ -32,10 +32,10 @@ Você pode usar o seguinte documento HTML como ponto de partida:
                 // escreve a coluna inicial
                 let x = [];
                 for (let i = 0; i <= n; i++) {
-                    x[i]=[]
+                  x.push(i);   // x[i]=[]; 
                     for (let j = 0; j<= n; j++) {
                         x[i].push(i * j);
-                    }
+                    } 
                 }
                 console.table(x)
                 // TODO: escrever dois loops aninhados para desenhar o array bidimencional e monstar o restante da tabela no console.
