@@ -1,2 +1,0 @@
-let roW;
-let coL;
